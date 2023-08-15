@@ -1,9 +1,11 @@
-import { render } from "@testing-library/react-native";
+import { render, screen } from "@testing-library/react-native";
 import { Input } from ".";
 describe("Component: Input", () => {
   it("should  be render without activity indicator", () => {
-    const { debug } = render(<Input />);
+    render(<Input isLoading />);
 
-    debug();
+    const activityIndicator = screen.getByTestId("activity-indicator");
+
+    console.log(activityIndicator);
   });
 });
