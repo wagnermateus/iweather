@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react-native";
+import { render, screen, fireEvent } from "@testing-library/react-native";
 
 import { SelectList } from "@components/SelectList";
 
@@ -12,5 +12,7 @@ describe("Component: SelectList", () => {
     render(<SelectList data={data} onChange={() => {}} onPress={() => {}} />);
 
     const selectedCity = screen.getByText(/nova vida/i);
+
+    fireEvent.press(selectedCity);
   });
 });
