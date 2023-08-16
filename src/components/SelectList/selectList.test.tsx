@@ -9,10 +9,14 @@ describe("Component: SelectList", () => {
       { id: "2", name: "Talatona", latitude: 123, longitude: 456 },
     ];
 
-    render(<SelectList data={data} onChange={() => {}} onPress={() => {}} />);
+    const onPress = jest.fn();
+
+    render(<SelectList data={data} onChange={() => {}} onPress={onPress} />);
 
     const selectedCity = screen.getByText(/nova vida/i);
 
     fireEvent.press(selectedCity);
+
+    expect(onPress).toBeCalledTimes(1);
   });
 });
