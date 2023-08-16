@@ -17,6 +17,6 @@ describe("Component: SelectList", () => {
 
     fireEvent.press(selectedCity);
 
-    expect(onPress).toBeCalledTimes(1);
+    expect(onPress).toBeCalledWith(data[0]);
   });
 });
