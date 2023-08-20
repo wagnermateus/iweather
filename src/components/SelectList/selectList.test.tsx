@@ -6,7 +6,7 @@ describe("Component: SelectList", () => {
   it("should be return city details selected", async () => {
     const data = [
       { id: "1", name: "Nova Vida", latitude: 123, longitude: 456 },
-      { id: "2", name: "Talatona", latitude: 123, longitude: 456 },
+      { id: "2", name: "Talatona", latitude: 124, longitude: 456 },
     ];
 
     const onPress = jest.fn();

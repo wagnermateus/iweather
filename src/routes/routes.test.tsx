@@ -1,12 +1,12 @@
-import { render } from "@__tests__/utils/customRender";
-import { screen, waitFor, act } from "@testing-library/react-native";
-import { Routes } from ".";
+import { act, screen, waitFor } from "@testing-library/react-native";
+import { Routes } from "@routes/index";
 import { saveStorageCity } from "@libs/asyncStorage/cityStorage";
+import { render } from "@__tests__/utils/customRender";
 import { api } from "@services/api";
 import { mockWeatherAPIResponse } from "@__tests__/mocks/api/mockWeatherAPIResponse";
 
 describe("Routes", () => {
-  it("should be render Search screen when not city selected", async () => {
+  it("should be render Search screen when not city selecte", async () => {
     render(<Routes />);
 
     const title = await waitFor(() => screen.findByText(/^escolha um local/i));
