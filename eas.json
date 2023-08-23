@@ -9,15 +9,8 @@
       },
       "ios": {
         "simulator": true
-      },
-      "env": {
-        "EXPO_PUBLIC_WEATHER_APP_ID": "148d51780b266fbeadccdc704c16c4bd"
       }
     },
-    "production": {
-      "env": {
-        "EXPO_PUBLIC_WEATHER_APP_ID": "148d51780b266fbeadccdc704c16c4bd"
-      }
-    }
+    "production": {}
   }
 }
