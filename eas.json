@@ -9,8 +9,11 @@
       },
       "ios": {
         "simulator": true
-      }
+      },
+      "channel": "preview"
     },
-    "production": {}
+    "production": {
+      "channel": "production"
+    }
   }
 }
